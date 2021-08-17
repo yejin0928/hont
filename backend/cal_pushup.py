@@ -8,7 +8,6 @@ def get_angle_v3(p1, p2, p3):
 ##푸시업 한 기준
 
 def is_pushup(elbow_angle, body_angle):
-	print("======is_pushup start=======")
 	pushup_guide= ""
 	action_status = True
 
@@ -32,11 +31,10 @@ def is_pushup(elbow_angle, body_angle):
 		text = "성공"
 	else:
 		text = "실패"
-	print("======is_pushup end=====")
 	
 	return action_status, pushup_guide, text
 
-#푸시업 - 올바른 푸시업 자세 기준을 만든걸 던져줌
+#푸시업 - 올바른 푸시업 자세 기준
 def do_pushup(l_sh, r_sh, l_elbow, r_elbow, l_wrist, r_wrist, l_hip, r_hip, l_ankle, r_ankle):
 
 	l_elbow_angle = get_angle_v3(l_wrist, l_elbow, l_sh)
