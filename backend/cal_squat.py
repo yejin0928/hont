@@ -7,7 +7,6 @@ def get_angle_v3(p1, p2, p3):
 
 ##스쿼트 한 기준
 def is_squat(hip_angle,l_knee_hip,r_knee_hip,l_knee_foot,r_knee_foot):
-    print("======is_squat start=======")
     squat_guide = ""
     action_status = True 
     
